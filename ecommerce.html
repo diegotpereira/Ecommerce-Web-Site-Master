@@ -5,10 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Ecommerce Store</title>
+
+    <!-- Biblioteca Bootstrap CSS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
 </head>
 
 <body>
+    <!-- Navegação -->
+    <nav class="navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- A marca e a alternância são agrupadas para uma melhor exibição no celular -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Painel</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="ecommerce.html">Web Ecommerce Store</a>
+            </div>
+            <!-- Colete os links de navegação, formulários e outros conteúdos para alternando -->
+            <div class="collapse navbar-collapse" id="bs-example-navbarcollapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">Categorias
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="nav-link waves-effect">
+                                <a href="categoria.html">Vestuário &amp; Acessórios</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Produtos para bebês</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Beleza &amp; Saúde</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Eletrônicos</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Mobiliário</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Casa &amp; Jardim</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Bagagem &amp; Bolsas</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Sapato</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Esportes &amp; Entretenimento</a>
+                            </li>
+                            <li>
+                                <a href="categoria.html">Relógios</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="ecommerce.html">Todas as Categorias</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="badge pull-right"></span><i class="glyphicon glyphicon-shopping-cart"></i></i></a></li>
+                    <li><a href="conta.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fechar</span>
+                    </button>
+
+                    <h2 class="modal-title" id="myModalLabel">Entrar</h2>
+                </div>
+
+                <div class="modal-body">
+                    <form class="form-signin" role="form">
+                        <h3 class="form-signin-heading">Faça login com seu endereço de e-mail</h3>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Digite seu email" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Digite sua senha" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="lembrar-me">Lembrar-me
+                            </label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                    </form>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">
+                            Facebook
+                            <span class="icon-facebook"></span>
+                        </a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-twitter btn-large btn-caps btn-block">
+                            Twitter
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-lg btn-caps btn-block">
+                            <span class="icon-dribbble"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Biblioteca JQuery -->
+    <!-- <script src="js/jquery.js"></script> -->
+
+    <!-- <script src="js/bootstrap.js"></script> -->
 
 </body>
 
